@@ -16,7 +16,7 @@ $(document).ready(function(){
 function appendImageToBody(srcURL) {
     // write a function that will append an <img> to the body with the
     // URL provided in the parameters
-    $('body').append('<img src=' + srcURL + '>');
+    $('#result').append('<img src=' + srcURL + '>');
 }
 
 function callGiphyAPIWithSearchTerm(searchTerm) {
@@ -42,3 +42,8 @@ callGiphyAPIWithSearchTerm(searchTerm);
   
   
 });
+
+
+
+
+
