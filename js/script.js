@@ -35,7 +35,14 @@ function callGiphyAPIWithSearchTerm(searchTerm) {
 //Add a click handler beloe to call the function when the button is clicked
 $("button").click(function() {
 var searchTerm = $("input").val();
+console.log("searchTerm " + searchTerm)
+var searchTerm2 = $('#srch-term2').val();
+console.log("searchTerm2 " + searchTerm2)
+var searchTerm3 = $("input"+'#srch-term2').val();
+console.log("searchTerm3 " + searchTerm3)
 callGiphyAPIWithSearchTerm(searchTerm);
+callGiphyAPIWithSearchTerm(searchTerm2);
+callGiphyAPIWithSearchTerm(searchTerm3);
 });
     
   
